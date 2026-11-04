@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="zh-HK" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24小時香港輪胎電池基地 | 全港緊急救車・搭電・補胎・換電池</title>
+    <meta name="description" content="全港18區24小時極速上門救車服務！過江龍搭電$230起、上門補胎換胎$450起、更換汽車電池$500起。明碼實價，最快20分鐘到達。立即致電或WhatsApp 9797 9893。">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Noto Sans TC & Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', '"Inter"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            yellow: '#FFB800',
+                            dark: '#0F172A',
+                            darker: '#090D16',
+                            whatsapp: '#25D366',
+                            call: '#EF4444',
+                            alipay: '#00AAEE'
+                        }
+                    },
+                    animation: {
+                        'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* 自訂道路救援警戒條紋背景 */
+        .hazard-stripes {
+            background: repeating-linear-gradient(
+                -45deg,
+                #FFB800,
+                #FFB800 12px,
+                #090D16 12px,
+                #090D16 24px
+            );
+        }
+        /* 按鈕立體光影效果 */
+        .btn-glow-green {
+            box-shadow: 0 0 25px rgba(37, 211, 102, 0.45);
+        }
+        .btn-glow-red {
+            box-shadow: 0 0 25px rgba(239, 68, 68, 0.45);
+        }
+        .btn-glow-yellow {
+            box-shadow: 0 0 25px rgba(255, 184, 0, 0.35);
+        }
+    </style>
+</head>
+<body class="bg-brand-darker text-white font-sans antialiased pb-24 md:pb-8 selection:bg-brand-yellow selection:text-black">
+
+    <!-- 頂部警戒線 -->
+    <div class="hazard-stripes h-2 w-full"></div>
+
+    <!-- 頂部固定導航列 (Sticky Header) -->
+    <header class="sticky top-0 z-50 bg-brand-darker/95 backdrop-blur-md border-b border-slate-800 shadow-xl">
+        <div class="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+            <!-- 公司標誌與名稱 -->
+            <a href="#" class="flex items-center space-x-2.5 group">
+                <div class="w-10 h-10 rounded-xl bg-brand-yellow flex items-center justify-center text-black font-black text-xl shadow-md group-hover:scale-105 transition">
+                    <i class="fa-solid fa-car-burst"></i>
+                </div>
+                <div>
+                    <div class="flex items-center space-x-1.5">
+                        <span class="inline-block w-2 h-2 rounded-full bg-green-500 animate-ping"></span>
+                        <span class="text-[11px] font-bold text-brand-yellow tracking-wider uppercase">全港24小時極速上門</span>
+                    </div>
+                    <h1 class="text-base sm:text-lg font-black tracking-tight text-white leading-tight">
+                        24小時香港輪胎電池基地
+                    </h1>
+                </div>
+            </a>
+
+            <!-- 右側快速致電按鈕 -->
+            <div class="flex items-center space-x-2">
+                <a href="tel:+85297979893" class="bg-brand-call hover:bg-red-600 active:scale-95 text-white font-black px-3.5 py-2 sm:px-5 sm:py-2.5 rounded-xl flex items-center space-x-2 transition shadow-lg btn-glow-red">
+                    <i class="fa-solid fa-phone-volume animate-bounce text-sm sm:text-base"></i>
+                    <div class="text-left">
+                        <span class="block text-[10px] leading-none opacity-90 font-medium">24小時救援熱線</span>
+                        <span class="text-sm sm:text-base tracking-wider font-black">9797 9893</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 首屏 (Hero Section) -->
+    <section class="relative overflow-hidden pt-6 pb-10 sm:py-14 border-b border-slate-800/80 bg-gradient-to-b from-brand-dark to-brand-darker">
+        <!-- 背景裝飾光暈 -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[280px] bg-brand-yellow/10 blur-[110px] pointer-events-none rounded-full"></div>
+
+        <div class="max-w-4xl mx-auto px-4 relative z-10 text-center">
+            <!-- 狀態標籤 -->
+            <div class="inline-flex items-center space-x-2 bg-slate-800/90 border border-brand-yellow/40 rounded-full px-4 py-1.5 mb-5 shadow-md">
+                <span class="flex h-2.5 w-2.5 relative">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-yellow opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-brand-yellow"></span>
+                </span>
+                <span class="text-xs sm:text-sm font-bold text-amber-300">各區救援車隊待命中・最快 20-30 分鐘到達現場</span>
+            </div>
+
+            <!-- 主標題 -->
+            <h2 class="text-3xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight mb-4">
+                半路死火？電池無電？爆胎？<br>
+                <span class="text-brand-yellow underline decoration-brand-yellow/40 decoration-wavy underline-offset-8">全港18區即叫即到！</span>
+            </h2>
+
+            <!-- 副標題與承諾 -->
+            <p class="text-slate-300 text-base sm:text-xl max-w-2xl mx-auto mb-6 font-medium leading-relaxed">
+                專營街邊及停車場上門<strong class="text-white">過江龍搭電</strong>、<strong class="text-white">補胎換胎</strong>、<strong class="text-white">即場換電池</strong>。<br class="hidden sm:inline">
+                出發前清晰報價，<span class="text-brand-yellow font-bold">完成救援後收費，絕不坐地起價！</span>
+            </p>
+
+            <!-- 3大信心保證徽章 -->
+            <div class="grid grid-cols-3 gap-2 sm:gap-4 max-w-lg mx-auto mb-8 text-xs sm:text-sm font-bold">
+                <div class="bg-slate-900/90 border border-slate-700/80 rounded-xl py-2.5 px-2 flex flex-col sm:flex-row items-center justify-center sm:space-x-2 text-slate-200">
+                    <i class="fa-solid fa-bolt text-brand-yellow text-base mb-1 sm:mb-0"></i>
+                    <span>20-30分鐘極速到</span>
+                </div>
+                <div class="bg-slate-900/90 border border-slate-700/80 rounded-xl py-2.5 px-2 flex flex-col sm:flex-row items-center justify-center sm:space-x-2 text-slate-200">
+                    <i class="fa-solid fa-shield-halved text-brand-yellow text-base mb-1 sm:mb-0"></i>
+                    <span>絕無隱藏收費</span>
+                </div>
+                <div class="bg-slate-900/90 border border-slate-700/80 rounded-xl py-2.5 px-2 flex flex-col sm:flex-row items-center justify-center sm:space-x-2 text-slate-200">
+                    <i class="fa-solid fa-clock text-brand-yellow text-base mb-1 sm:mb-0"></i>
+                    <span>365日通宵營業</span>
+                </div>
+            </div>
+
+            <!-- 超大雙行動按鈕 (Primary CTAs) -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-2xl mx-auto">
+                <a href="tel:+85297979893" class="w-full sm:w-1/2 bg-brand-call hover:bg-red-600 active:scale-[0.99] text-white font-black text-xl py-4 px-6 rounded-2xl flex items-center justify-center space-x-3 transition shadow-xl btn-glow-red border-2 border-red-400/30">
+                    <i class="fa-solid fa-phone-volume text-2xl animate-pulse"></i>
+                    <div class="text-left">
+                        <span class="block text-xs font-semibold text-red-100">最快捷・師傅即時接聽</span>
+                        <span>立即致電 9797 9893</span>
+                    </div>
+                </a>
+
+                <a href="https://wa.me/85297979893?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E9%9C%80%E8%A6%81%E7%B7%8A%E6%80%A5%E6%95%91%E8%BB%8A%E6%9C%8D%E5%8B%99" target="_blank" rel="noopener noreferrer" class="w-full sm:w-1/2 bg-brand-whatsapp hover:bg-green-500 active:scale-[0.99] text-slate-950 font-black text-xl py-4 px-6 rounded-2xl flex items-center justify-center space-x-3 transition shadow-xl btn-glow-green border-2 border-green-300/50">
+                    <i class="fa-brands fa-whatsapp text-3xl"></i>
+                    <div class="text-left">
+                        <span class="block text-xs font-bold text-slate-900">一鍵發送定位及查詢</span>
+                        <span>WhatsApp 緊急救援</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心服務與透明報價 (Pricing Section) -->
+    <section id="pricing" class="py-10 sm:py-14 max-w-5xl mx-auto px-4">
+        <div class="text-center mb-8">
+            <span class="text-brand-yellow font-black text-xs sm:text-sm tracking-widest uppercase bg-brand-yellow/10 border border-brand-yellow/30 px-3 py-1 rounded-full">Transparent Pricing</span>
+            <h3 class="text-2xl sm:text-4xl font-black mt-3">核心救車服務・明碼實價</h3>
+            <p class="text-slate-400 text-sm sm:text-base mt-1.5">出發前電話或 WhatsApp 確認最終報價，絕無海鮮價或隱藏附加費</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <!-- 服務 1：過江龍 / 搭電 -->
+            <div class="bg-slate-900/90 border-2 border-slate-800 hover:border-brand-yellow rounded-2xl p-6 flex flex-col justify-between transition relative overflow-hidden group">
+                <div class="absolute top-0 right-0 bg-brand-yellow text-black font-black text-xs px-3 py-1 rounded-bl-xl">
+                    極速救車
+                </div>
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-brand-yellow text-2xl mb-4">
+                        <i class="fa-solid fa-car-battery"></i>
+                    </div>
+                    <h4 class="text-xl sm:text-2xl font-black text-white mb-2">過江龍 / 搭電服務</h4>
+                    <div class="flex items-baseline space-x-1 my-3">
+                        <span class="text-slate-400 text-sm font-bold">HK$</span>
+                        <span class="text-4xl sm:text-5xl font-black text-brand-yellow tracking-tight">230</span>
+                        <span class="text-slate-300 font-bold text-base">元起</span>
+                    </div>
+                    <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                        針對忘記關燈、長期停泊或電池老化導致死火撻唔著車，專業強力過江龍即時無損啟動引擎。
+                    </p>
+                    <ul class="space-y-2 text-xs sm:text-sm text-slate-300 mb-6 border-t border-slate-800 pt-4">
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-circle-check text-green-400"></i>
+                            <span>支援私家車、七人車、貨Van及電單車</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-circle-check text-green-400"></i>
+                            <span>免費現場檢測發電機及電池健康狀態</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-circle-check text-green-400"></i>
+                            <span>全港街邊及室內外停車場均可進入</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid grid-cols-2 gap-2 pt-2">
+                    <a href="tel:+85297979893" class="bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 rounded-xl text-center text-sm flex items-center justify-center space-x-1.5 transition">
+                        <i class="fa-solid fa-phone text-red-400"></i>
+                        <span>致電叫車</span>
+                    </a>
+                    <a href="https://wa.me/85297979893?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E9%9C%80%E8%A6%81%E3%80%90%E9%81%8E%E6%B1%9F%E9%BE%8D/%E6%90%AD%E9%9B%BB%E6%9C%8D%E5%8B%99%E3%80%91(%24230%E8%B5%B7)%EF%BC%8C%E8%AB%8B%E5%95%8F%E5%B9%BE%E8%80%90%E5%8F%AF%E4%BB%A5%E5%88%B0%EF%BC%9F" target="_blank" rel="noopener noreferrer" class="bg-brand-whatsapp/90 hover:bg-brand-whatsapp text-slate-950 font-black py-3 rounded-xl text-center text-sm flex items-center justify-center space-x-1.5 transition">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 服務 2：補胎 / 換胎 -->
+            <div class="bg-slate-900/90 border-2 border-slate-800 hover:border-brand-yellow rounded-2xl p-6 flex flex-col justify-between transition relative overflow-hidden group">
+                <div class="absolute top-0 right-0 bg-red-500 text-white font-black text-xs px-3 py-1 rounded-bl-xl">
+                    街邊/停車場支援
+                </div>
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-brand-yellow text-2xl mb-4">
+                        <i class="fa-solid fa-ring"></i>
+                    </div>
+                    <h4 class="text-xl sm:text-2xl font-black text-white mb-2">上門補胎 / 換胎服務</h4>
+                    <div class="flex items-baseline space-x-1 my-3">
+                        <span class="text-slate-400 text-sm font-bold">HK$</span>
+                        <span class="text-4xl sm:text-5xl font-black text-brand-yellow tracking-tight">450</span>
+                        <span class="text-slate-300 font-bold text-base">元起</span>
+                    </div>
+                    <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                        車胎中釘漏氣、爆胎無法行駛？師傅帶齊工具直接到街邊、屋苑或商場停車場幫您即時處理。
+                    </p>
+                    <ul class="space-y-2 text-xs sm:text-sm text-slate-300 mb-6 border-t border-slate-800 pt-4">
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-circle-check text-green-400"></i>
+                            <span>支援街邊、室內外停車場即時上門補胎</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-circle-check text-green-400"></i>
+                            <span>代換後備胎（士啤胎）及標準充氣檢查</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-circle-check text-green-400"></i>
+                            <span>免卻拖車排隊時間，即場處理即刻行得</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid grid-cols-2 gap-2 pt-2">
+                    <a href="tel:+85297979893" class="bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 rounded-xl text-center text-sm flex items-center justify-center space-x-1.5 transition">
+                        <i class="fa-solid fa-phone text-red-400"></i>
+                        <span>致電叫車</span>
+                    </a>
+                    <a href="https://wa.me/85297979893?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E9%9C%80%E8%A6%81%E3%80%90%E4%B8%8A%E9%96%80%E8%A3%9C%E8%83%8E/%E6%8F%9B%E8%83%8E%E6%9C%8D%E5%8B%99%E3%80%91(%24450%E8%B5%B7)%EF%BC%8C%E8%AB%8B%E5%95%8F%E5%B9%BE%E8%80%90%E5%8F%AF%E4%BB%A5%E5%88%B0%EF%BC%9F" target="_blank" rel="noopener noreferrer" class="bg-brand-whatsapp/90 hover:bg-brand-whatsapp text-slate-950 font-black py-3 rounded-xl text-center text-sm flex items-center justify-center space-x-1.5 transition">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- 服務 3：更換汽車電池 -->
+            <div class="bg-slate-900/90 border-2 border-brand-yellow rounded-2xl p-6 flex flex-col justify-between transition relative overflow-hidden shadow-lg btn-glow-yellow">
+                <div class="absolute top-0 right-0 bg-brand-yellow text-black font-black text-xs px-3 py-1 rounded-bl-xl">
+                    包上門安裝
+                </div>
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-brand-yellow text-2xl mb-4">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h4 class="text-xl sm:text-2xl font-black text-white mb-2">更換汽車電池</h4>
+                    <div class="flex items-baseline space-x-1 my-3">
+                        <span class="text-slate-400 text-sm font-bold">HK$</span>
+                        <span class="text-4xl sm:text-5xl font-black text-brand-yellow tracking-tight">500</span>
+                        <span class="text-slate-300 font-bold text-base">元起</span>
+                    </div>
+                    <p class="text-slate-300 text-sm mb-4 leading-relaxed">
+                        電池壽命已盡？我們備有全港日韓歐美車系原廠規格電池（包括普通電池及 ISS 怠速熄火 EFB/AGM 電池）。
+                    </p>
+                    <ul class="space-y-2 text-xs sm:text-sm text-slate-300 mb-6 border-t border-slate-800 pt-4">
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-circle-check text-green-400"></i>
+                            <span>包送到現場、專業不斷電安裝及電腦重設</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-circle-check text-green-400"></i>
+                            <span>齊備日韓歐美各大車廠型號全新正貨電池</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa-solid fa-circle-check text-green-400"></i>
+                            <span>免費回收舊電池及檢測全車充電系統</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid grid-cols-2 gap-2 pt-2">
+                    <a href="tel:+85297979893" class="bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 rounded-xl text-center text-sm flex items-center justify-center space-x-1.5 transition">
+                        <i class="fa-solid fa-phone text-red-400"></i>
+                        <span>致電報價</span>
+                    </a>
+                    <a href="https://wa.me/85297979893?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E9%9C%80%E8%A6%81%E3%80%90%E4%B8%8A%E9%96%80%E6%9B%B4%E6%8F%9B%E6%B1%BD%E8%BB%8A%E9%9B%BB%E6%B1%A0%E3%80%91(%24500%E8%B5%B7)%EF%BC%8C%E8%AB%8B%E5%95%8F%E6%9C%89%E7%84%A1%E7%8F%BE%E8%B2%A8%EF%BC%9F" target="_blank" rel="noopener noreferrer" class="bg-brand-whatsapp hover:bg-green-500 text-slate-950 font-black py-3 rounded-xl text-center text-sm flex items-center justify-center space-x-1.5 transition">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 互動快速求助生成器 (Quick WhatsApp Helper) -->
+    <section class="py-8 max-w-3xl mx-auto px-4">
+        <div class="bg-gradient-to-br from-slate-900 via-slate-900 to-slate-800 border-2 border-brand-yellow/60 rounded-3xl p-5 sm:p-8 shadow-2xl">
+            <div class="flex items-center space-x-3 mb-4">
+                <span class="bg-brand-yellow text-black w-8 h-8 rounded-lg flex items-center justify-center font-black">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </span>
+                <div>
+                    <h3 class="text-lg sm:text-2xl font-black text-white">10秒極速 WhatsApp 呼喚師傅</h3>
+                    <p class="text-xs sm:text-sm text-slate-400">點選以下項目，自動生成求助訊息並一鍵傳送俾師傅</p>
+                </div>
+            </div>
+
+            <!-- 步驟 1: 選擇服務 -->
+            <div class="mb-5">
+                <label class="block text-xs sm:text-sm font-bold text-amber-300 mb-2">1. 請選擇您需要的救援服務：</label>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3" id="service-selector">
+                    <button type="button" onclick="selectService('過江龍 / 搭電', this)" class="service-btn active-btn bg-brand-yellow text-black font-black py-3 px-2 rounded-xl text-xs sm:text-sm border-2 border-brand-yellow transition flex flex-col items-center justify-center space-y-1.5">
+                        <i class="fa-solid fa-car-battery text-lg"></i>
+                        <span>過江龍 / 搭電</span>
+                    </button>
+                    <button type="button" onclick="selectService('補胎 / 換胎', this)" class="service-btn bg-slate-800/90 text-slate-200 hover:bg-slate-800 font-bold py-3 px-2 rounded-xl text-xs sm:text-sm border-2 border-slate-700 transition flex flex-col items-center justify-center space-y-1.5">
+                        <i class="fa-solid fa-ring text-lg text-brand-yellow"></i>
+                        <span>補胎 / 換胎</span>
+                    </button>
+                    <button type="button" onclick="selectService('更換汽車電池', this)" class="service-btn bg-slate-800/90 text-slate-200 hover:bg-slate-800 font-bold py-3 px-2 rounded-xl text-xs sm:text-sm border-2 border-slate-700 transition flex flex-col items-center justify-center space-y-1.5">
+                        <i class="fa-solid fa-screwdriver-wrench text-lg text-brand-yellow"></i>
+                        <span>更換汽車電池</span>
+                    </button>
+                    <button type="button" onclick="selectService('不確定問題 (需師傅檢查)', this)" class="service-btn bg-slate-800/90 text-slate-200 hover:bg-slate-800 font-bold py-3 px-2 rounded-xl text-xs sm:text-sm border-2 border-slate-700 transition flex flex-col items-center justify-center space-y-1.5">
+                        <i class="fa-solid fa-circle-question text-lg text-brand-yellow"></i>
+                        <span>不確定問題</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- 步驟 2 & 3: 選擇所在地區與環境 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+                <div>
+                    <label class="block text-xs sm:text-sm font-bold text-amber-300 mb-2">2. 您目前所在的地區：</label>
+                    <div class="grid grid-cols-2 gap-2" id="district-selector">
+                        <button type="button" onclick="selectDistrict('九龍區', this)" class="district-btn bg-brand-yellow text-black font-black py-2.5 px-2 rounded-xl text-xs sm:text-sm border-2 border-brand-yellow transition">
+                            📍 九龍區
+                        </button>
+                        <button type="button" onclick="selectDistrict('港島區', this)" class="district-btn bg-slate-800/90 text-slate-200 hover:bg-slate-800 font-bold py-2.5 px-2 rounded-xl text-xs sm:text-sm border-2 border-slate-700 transition">
+                            📍 港島區
+                        </button>
+                        <button type="button" onclick="selectDistrict('新界東', this)" class="district-btn bg-slate-800/90 text-slate-200 hover:bg-slate-800 font-bold py-2.5 px-2 rounded-xl text-xs sm:text-sm border-2 border-slate-700 transition">
+                            📍 新界東
+                        </button>
+                        <button type="button" onclick="selectDistrict('新界西/大嶼山', this)" class="district-btn bg-slate-800/90 text-slate-200 hover:bg-slate-800 font-bold py-2.5 px-2 rounded-xl text-xs sm:text-sm border-2 border-slate-700 transition">
+                            📍 新界西/大嶼山
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs sm:text-sm font-bold text-amber-300 mb-2">3. 車輛停泊環境：</label>
+                    <div class="grid grid-cols-2 gap-2" id="env-selector">
+                        <button type="button" onclick="selectEnv('街邊/露天', this)" class="env-btn bg-brand-yellow text-black font-black py-2.5 px-2 rounded-xl text-xs sm:text-sm border-2 border-brand-yellow transition h-full">
+                            🛣️ 街邊/露天
+                        </button>
+                        <button type="button" onclick="selectEnv('室內/地庫停車場', this)" class="env-btn bg-slate-800/90 text-slate-200 hover:bg-slate-800 font-bold py-2.5 px-2 rounded-xl text-xs sm:text-sm border-2 border-slate-700 transition h-full">
+                            🅿️ 室內/地庫停車場
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 步驟 4: 選填車型或位置補充 -->
+            <div class="mb-5">
+                <label for="car-info" class="block text-xs sm:text-sm font-bold text-slate-300 mb-1.5">4. 車型或街道/停車場名稱（選填，亦可稍後直接喺 WhatsApp 發送定位）：</label>
+                <input type="text" id="car-info" oninput="updateWhatsAppPreview()" placeholder="例如：Toyota Alphard / 旺角某商場停車場 / 電池型號" class="w-full bg-slate-950 border border-slate-700 focus:border-brand-yellow rounded-xl px-4 py-3 text-sm text-white placeholder-slate-500 outline-none transition">
+            </div>
+
+            <!-- 預覽與發送按鈕 -->
+            <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-3 mb-4 text-xs sm:text-sm text-slate-300 flex items-start space-x-2">
+                <i class="fa-regular fa-comment-dots text-brand-whatsapp mt-1"></i>
+                <div>
+                    <span class="text-slate-500 block text-[11px]">系統將自動為您填寫以下 WhatsApp 訊息：</span>
+                    <span id="wa-preview-text" class="font-medium text-white">你好，我需要緊急救車服務！項目：【過江龍 / 搭電】，地區：【九龍區 - 街邊/露天】，請問師傅幾耐可以到達？</span>
+                </div>
+            </div>
+
+            <a id="wa-dynamic-link" href="https://wa.me/85297979893?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E9%9C%80%E8%A6%81%E7%B7%8A%E6%80%A5%E6%95%91%E8%BB%8A%E6%9C%8D%E5%8B%99%EF%BC%81%E9%A0%85%E7%9B%AE%EF%BC%9A%E3%80%90%E9%81%8E%E6%B1%9F%E9%BE%8D%20/%20%E6%90%AD%E9%9B%BB%E3%80%91%EF%BC%8C%E5%9C%B0%E5%8D%80%EF%BC%9A%E3%80%90%E4%B9%9D%E9%BE%8D%E5%8D%80%20-%20%E8%A1%97%E9%82%8A/%E9%9C%B2%E5%A4%A9%E3%80%91%EF%BC%8C%E8%AB%8B%E5%95%8F%E5%B8%AB%E5%82%85%E5%B9%BE%E8%80%90%E5%8F%AF%E4%BB%A5%E5%88%B0%E9%81%94%EF%BC%9F" target="_blank" rel="noopener noreferrer" class="w-full bg-brand-whatsapp hover:bg-green-500 active:scale-[0.99] text-slate-950 font-black text-lg sm:text-xl py-4 px-6 rounded-2xl flex items-center justify-center space-x-2 transition shadow-xl btn-glow-green">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                <span>立即傳送 WhatsApp 呼喚師傅</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- 3步極速救援流程 -->
+    <section class="py-10 max-w-5xl mx-auto px-4">
+        <div class="text-center mb-8">
+            <h3 class="text-2xl sm:text-3xl font-black">簡單 3 步・極速幫您搞掂</h3>
+            <p class="text-slate-400 text-sm mt-1">無需拖車排隊，現場即時救援即刻著車行得</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Step 1 -->
+            <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-5 flex items-start space-x-4">
+                <div class="w-10 h-10 rounded-xl bg-brand-yellow text-black font-black text-lg flex-shrink-0 flex items-center justify-center">
+                    1
+                </div>
+                <div>
+                    <h4 class="font-black text-base sm:text-lg text-white mb-1">致電或 WhatsApp 發送定位</h4>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        聯絡 <strong class="text-white">9797 9893</strong> 告知車輛狀況（死火/爆胎/換電）、車型及發送目前位置（支援街邊及室內外停車場）。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-5 flex items-start space-x-4">
+                <div class="w-10 h-10 rounded-xl bg-brand-yellow text-black font-black text-lg flex-shrink-0 flex items-center justify-center">
+                    2
+                </div>
+                <div>
+                    <h4 class="font-black text-base sm:text-lg text-white mb-1">師傅即時報價並極速出發</h4>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        我們會先提供清晰實價報價，確認後隨即指派最近您的救援師傅出發，最快 20-30 分鐘到達。
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="bg-slate-900/70 border border-slate-800 rounded-2xl p-5 flex items-start space-x-4">
+                <div class="w-10 h-10 rounded-xl bg-brand-yellow text-black font-black text-lg flex-shrink-0 flex items-center justify-center">
+                    3
+                </div>
+                <div>
+                    <h4 class="font-black text-base sm:text-lg text-white mb-1">現場專業救援・完成後收費</h4>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                        師傅現場快速搭電、補胎或換新電池，確保車輛回復正常啟動後才收費，明碼實價，安全可靠。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 全港18區覆蓋範圍與常見問題 -->
+    <section class="py-8 max-w-5xl mx-auto px-4">
+        <div class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 sm:p-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                <div>
+                    <div class="inline-flex items-center space-x-1.5 text-brand-yellow text-xs font-bold mb-2">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>全天候覆蓋全港 18 區</span>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-black mb-3">無論您喺邊區拋錨，我哋都使命必達！</h3>
+                    <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-4">
+                        我們的流動救援車隊駐守港九新界各主要幹道附近，熟悉香港各區地形、屋苑及地庫停車場高度限制。
+                    </p>
+                    <div class="space-y-2 text-xs sm:text-sm">
+                        <div class="flex items-start space-x-2">
+                            <span class="bg-slate-800 text-brand-yellow font-bold px-2 py-0.5 rounded flex-shrink-0">九龍區</span>
+                            <span class="text-slate-300">旺角、油尖咀、深水埗、長沙灣、九龍城、土瓜灣、觀塘、九龍灣、黃大仙、將軍澳</span>
+                        </div>
+                        <div class="flex items-start space-x-2">
+                            <span class="bg-slate-800 text-brand-yellow font-bold px-2 py-0.5 rounded flex-shrink-0">新界區</span>
+                            <span class="text-slate-300">荃灣、葵涌、青衣、沙田、大圍、馬鞍山、大埔、粉嶺、上水、元朗、天水圍、屯門、西貢、東涌</span>
+                        </div>
+                        <div class="flex items-start space-x-2">
+                            <span class="bg-slate-800 text-brand-yellow font-bold px-2 py-0.5 rounded flex-shrink-0">港島區</span>
+                            <span class="text-slate-300">中環、上環、灣仔、銅鑼灣、北角、鰂魚涌、太古、筲箕灣、柴灣、香港仔、鴨脷洲、薄扶林</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 車主常見問題 -->
+                <div class="bg-slate-950/90 border border-slate-800/90 rounded-xl p-5 space-y-4">
+                    <h4 class="font-black text-base text-brand-yellow flex items-center space-x-2">
+                        <i class="fa-solid fa-circle-question"></i>
+                        <span>車主緊急常見問題</span>
+                    </h4>
+                    <div class="space-y-3 text-xs sm:text-sm">
+                        <div class="border-b border-slate-800 pb-2.5">
+                            <p class="font-bold text-white mb-0.5">Q: 我唔清楚自己架車用咩型號電池點算？</p>
+                            <p class="text-slate-400">只需用手機影低現時車頭舊電池頂部嘅編號（或告知車款及年份）WhatsApp 傳送至 9797 9893，師傅會即刻幫您配對合適電池。</p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white mb-0.5">Q: 架車停喺地庫停車場死火/爆胎入唔入到嚟？</p>
+                            <p class="text-slate-400">絕對可以！我們配備靈活救援車輛及便攜式專業搭電、補胎及換電工具，全港各大小商場、屋苑低矮地庫停車場均可進入。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾與唯一付款方式展示區 (Footer) -->
+    <footer class="border-t border-slate-800/80 pt-8 pb-10 text-center text-slate-400 text-xs sm:text-sm px-4">
+        <div class="max-w-4xl mx-auto space-y-5">
+            <!-- 網頁最底部：唯一一次展示支援付款方式 -->
+            <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-4 sm:p-5 max-w-2xl mx-auto">
+                <p class="text-xs sm:text-sm font-bold text-slate-300 mb-3">
+                    <i class="fa-solid fa-wallet text-brand-yellow mr-1.5"></i>完成救援後收費・現場支援以下付款方式
+                </p>
+                <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-2.5">
+                    <span class="bg-[#00AAEE] text-white font-black px-3.5 py-1.5 rounded-xl text-xs sm:text-sm flex items-center space-x-1.5 shadow">
+                        <i class="fa-brands fa-alipay text-base"></i>
+                        <span>支付寶HK (AlipayHK)</span>
+                    </span>
+                    <span class="bg-slate-800 border border-slate-700 text-white font-bold px-3 py-1.5 rounded-xl text-xs sm:text-sm">
+                        ⚡ 轉數快 FPS
+                    </span>
+                    <span class="bg-slate-800 border border-slate-700 text-white font-bold px-3 py-1.5 rounded-xl text-xs sm:text-sm">
+                        📱 PayMe
+                    </span>
+                    <span class="bg-slate-800 border border-slate-700 text-white font-bold px-3 py-1.5 rounded-xl text-xs sm:text-sm">
+                        💬 WeChat Pay HK
+                    </span>
+                    <span class="bg-slate-800 border border-slate-700 text-white font-bold px-3 py-1.5 rounded-xl text-xs sm:text-sm">
+                        💵 現金 Cash
+                    </span>
+                </div>
+            </div>
+
+            <div class="space-y-1.5 pt-2">
+                <p class="font-black text-white text-base sm:text-lg">24小時香港輪胎電池基地</p>
+                <p>全港24小時上門過江龍搭電・街邊補胎換胎・更換汽車電池</p>
+                <p class="text-brand-yellow font-bold text-base pt-1">
+                    24小時救援熱線 / WhatsApp：<a href="tel:+85297979893" class="underline hover:text-white">9797 9893</a>
+                </p>
+                <p class="text-slate-600 pt-2 text-xs">&copy; 24小時香港輪胎電池基地 版權所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 手機版底部固定懸浮行動列 (Sticky Bottom CTA Bar) -->
+    <div class="fixed bottom-0 left-0 right-0 z-50 bg-slate-950/95 backdrop-blur-md border-t-2 border-brand-yellow/60 p-2.5 shadow-2xl md:hidden">
+        <div class="grid grid-cols-2 gap-2.5 max-w-md mx-auto">
+            <!-- 左邊：立即致電 -->
+            <a href="tel:+85297979893" class="bg-brand-call active:bg-red-700 text-white font-black py-3 px-3 rounded-xl flex items-center justify-center space-x-2 shadow-lg btn-glow-red">
+                <i class="fa-solid fa-phone-volume text-lg animate-pulse"></i>
+                <div class="text-left leading-tight">
+                    <span class="block text-[10px] font-medium text-red-100">立即致電救援</span>
+                    <span class="text-sm font-black tracking-wide">9797 9893</span>
+                </div>
+            </a>
+
+            <!-- 右邊：WhatsApp 救援 -->
+            <a href="https://wa.me/85297979893?text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E9%9C%80%E8%A6%81%E7%B7%8A%E6%80%A5%E6%95%91%E8%BB%8A%E6%9C%8D%E5%8B%99" target="_blank" rel="noopener noreferrer" class="bg-brand-whatsapp active:bg-green-600 text-slate-950 font-black py-3 px-3 rounded-xl flex items-center justify-center space-x-2 shadow-lg btn-glow-green">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                <div class="text-left leading-tight">
+                    <span class="block text-[10px] font-bold text-slate-900">發送位置 / 查詢</span>
+                    <span class="text-sm font-black">WhatsApp 救援</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- 互動報價與 WhatsApp 訊息生成腳本 -->
+    <script>
+        let currentService = '過江龍 / 搭電';
+        let currentDistrict = '九龍區';
+        let currentEnv = '街邊/露天';
+
+        function selectService(serviceName, btnElement) {
+            currentService = serviceName;
+            const buttons = document.querySelectorAll('.service-btn');
+            buttons.forEach(btn => {
+                btn.className = 'service-btn bg-slate-800/90 text-slate-200 hover:bg-slate-800 font-bold py-3 px-2 rounded-xl text-xs sm:text-sm border-2 border-slate-700 transition flex flex-col items-center justify-center space-y-1.5';
+                const icon = btn.querySelector('i');
+                if (icon) icon.classList.add('text-brand-yellow');
+            });
+            btnElement.className = 'service-btn bg-brand-yellow text-black font-black py-3 px-2 rounded-xl text-xs sm:text-sm border-2 border-brand-yellow transition flex flex-col items-center justify-center space-y-1.5';
+            const activeIcon = btnElement.querySelector('i');
+            if (activeIcon) activeIcon.classList.remove('text-brand-yellow');
+            updateWhatsAppPreview();
+        }
+
+        function selectDistrict(districtName, btnElement) {
+            currentDistrict = districtName;
+            const buttons = document.querySelectorAll('.district-btn');
+            buttons.forEach(btn => {
+                btn.className = 'district-btn bg-slate-800/90 text-slate-200 hover:bg-slate-800 font-bold py-2.5 px-2 rounded-xl text-xs sm:text-sm border-2 border-slate-700 transition';
+            });
+            btnElement.className = 'district-btn bg-brand-yellow text-black font-black py-2.5 px-2 rounded-xl text-xs sm:text-sm border-2 border-brand-yellow transition';
+            updateWhatsAppPreview();
+        }
+
+        function selectEnv(envName, btnElement) {
+            currentEnv = envName;
+            const buttons = document.querySelectorAll('.env-btn');
+            buttons.forEach(btn => {
+                btn.className = 'env-btn bg-slate-800/90 text-slate-200 hover:bg-slate-800 font-bold py-2.5 px-2 rounded-xl text-xs sm:text-sm border-2 border-slate-700 transition h-full';
+            });
+            btnElement.className = 'env-btn bg-brand-yellow text-black font-black py-2.5 px-2 rounded-xl text-xs sm:text-sm border-2 border-brand-yellow transition h-full';
+            updateWhatsAppPreview();
+        }
+
+        function updateWhatsAppPreview() {
+            const carInfo = document.getElementById('car-info').value.trim();
+            let message = `你好，我需要緊急救車服務！項目：【${currentService}】，地區：【${currentDistrict} - ${currentEnv}】`;
+            if (carInfo) {
+                message += `，補充資料：【${carInfo}】`;
+            }
+            message += `，請問師傅幾耐可以到達？`;
+
+            document.getElementById('wa-preview-text').textContent = message;
+            const encodedMessage = encodeURIComponent(message);
+            document.getElementById('wa-dynamic-link').href = `https://wa.me/85297979893?text=${encodedMessage}`;
+        }
+    </script>
+</body>
+</html>
